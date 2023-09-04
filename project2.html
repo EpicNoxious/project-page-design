@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skewed Project Page | DEVDEX</title>
+
+    <!-- barba -->
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+    <!-- js link -->
+    <script defer src="./app.js"></script>
+  </head>
+
+  <body data-barba="wrapper">
+    <main
+      class="main-project"
+      data-barba="container"
+      data-barba-namespace="project1"
+    >
+      <div class="logo">
+        Your<br />Company<br />
+        co.
+      </div>
+      <button class="back-btn" type="button" onclick="history.back()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"
+          ></path>
+        </svg>
+      </button>
+      <section class="hero">
+        <h2 class="project-heading">project 2</h2>
+        <div class="img-wrapper">
+          <img src="./hero.jpg" alt="" />
+        </div>
+      </section>
+      <section class="content">
+        <h3>Sample content</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dolor
+          temporibus consectetur, perspiciatis odio recusandae repellendus?
+          Voluptatum dolore iste rem provident, id blanditiis perspiciatis quas
+          assumenda voluptate quos, magni optio? Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Amet dolor temporibus consectetur,
+          perspiciatis odio recusandae repellendus? Voluptatum dolore iste rem
+          provident, id blanditiis perspiciatis quas assumenda voluptate quos,
+          magni optio?
+        </p>
+      </section>
+      <footer>
+        <div class="footer-left">
+          <span>YourCompany.co</span>
+          <span>hello@gmail.com</span>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><span>01</span>twitter</li>
+            <li><span>02</span>instagram</li>
+            <li><span>03</span>linkedin</li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

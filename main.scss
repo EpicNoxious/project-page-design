@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Druk Wide Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Druk Wide Bold Bold"), url("DrukWideBold.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+  scale: 0.95;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+main {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.project {
+  padding: 5vw;
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-family: "Druk Wide Bold";
+  perspective: 200rem;
+  font-size: 14rem;
+  a {
+    color: black;
+    text-decoration: none;
+    transform-origin: right center;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: all 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-align: right;
+    letter-spacing: -0.2rem;
+    transform: rotateY(-45deg) scale(1) translateZ(-7rem);
+    display: block;
+  }
+  .degree {
+    font-size: 3.2rem;
+    font-weight: 400;
+  }
+
+  &:hover {
+    a {
+      transform: rotateY(-35deg) scale(1) translateZ(-7rem);
+      -webkit-text-stroke-width: 0.2rem;
+      -webkit-text-stroke-color: black;
+      color: transparent;
+    }
+    .degree {
+      -webkit-text-stroke-width: 0rem;
+      color: black;
+    }
+  }
+}
+
+h2 {
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: black;
+  color: transparent;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-family: "Druk Wide Bold";
+  font-size: 8rem;
+}
+.project-heading {
+  display: block;
+  position: absolute;
+  top: 25vh;
+  right: 0;
+  padding: 3vw;
+  transform: translate(0, -30%);
+  z-index: 10;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .img-wrapper {
+    height: 50vh;
+    overflow: hidden;
+    width: 100%;
+    transform-origin: bottom center;
+    transform: scaleY(0);
+    img {
+      width: 100%;
+    }
+  }
+}
+p {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-family: "Druk Wide Bold";
+}
+.content {
+  height: 50vh;
+  padding: 3vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer {
+  height: 30vh;
+  display: flex;
+  padding: 3vw;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  .footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 20%;
+    span:nth-of-type(2) {
+      font-weight: 600;
+    }
+  }
+  .footer-right {
+    height: 100%;
+    ul {
+      list-style: none;
+      li {
+        font-weight: 600;
+        span {
+          font-weight: 100;
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  display: inline-block;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-family: "Druk Wide Bold";
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 3vw 0 0 3vw;
+  z-index: 15;
+  cursor: pointer;
+}
+
+.back-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  color: black;
+  border-radius: 4rem;
+  position: absolute;
+  top: 3vw;
+  right: 3vw;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 0px solid black;
+  outline: 0;
+  &:hover {
+    border: 1px solid black;
+  }
+}
